@@ -63,9 +63,23 @@
 
 
     .food-gallery__inner-subtitle{
-        width: 145px;
-        height: 92px;
+        width: 184px;
+        height: 118px;
+        text-align: center;
         margin: 71px auto 81px;
+    }
+
+    .food-gallery__subtitle_left{
+        display: block;
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    .food-gallery__subtitle{
+        display: block;
+        margin-left: 0; 
+        font-size: 40px;
+        line-height: 46px;
     }
 
     .food-gallery__cards{
