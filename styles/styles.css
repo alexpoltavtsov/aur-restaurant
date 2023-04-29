@@ -1,0 +1,63 @@
+@import "./header.css";
+@import "./description.css";
+@import "./suggestion.css";
+@import "./price.css";
+@import "./presentation.css";
+@import "./reviews.css";
+@import "./food-gallery.css";
+@import "./cooks-gallery.css";
+@import "./banner.css";
+
+
+.body_fixed{
+    overflow: hidden;
+}
+
+.container{
+    width: 1110px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.btn{
+    font-family: 'Open Sans', sans-serif;
+    height: 47px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 14px 18px;
+    color: #FFFFFF;
+    background: #FF7400;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: #FFFFFF;
+    background: #FF7400;
+    opacity: 70%;
+}
+
+
+
+
+
+
+@media (max-width: 1199px) {
+
+    .container {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        
+    }
+
+}
+
+
+
+@media (max-width: 767px) {
+
+    
+
+}

@@ -1,0 +1,155 @@
+.price-wrapp__subtitle{
+    display: flex;
+    justify-content: space-between;
+    width: 294px;
+    margin: 132px auto 139px;
+}
+
+.price__subtitle{
+    color: #D67E34;
+}
+
+.price-box{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 29px;
+    margin-bottom: 152px;
+}
+
+.price__images_mini{
+    display: flex;
+    flex-direction: column;
+    row-gap: 26px;
+    margin-top: 3px;   
+}
+
+.price-subhead__inner {
+    margin-top: 40px;
+}
+
+.price-subhead{
+    margin-top: 135px;
+    margin-bottom: 145px;
+}
+
+.price-subhead__inner_next{
+    display: none;
+}
+
+
+
+@media (max-width: 1199px) {
+
+    .price-box{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 29px;
+        
+    }
+
+    .price__images{
+        margin-bottom: 50px;
+    }
+
+    .price-subhead__inner{
+        width: 500px;
+    }
+    
+
+}
+
+
+
+@media (max-width: 767px) {
+
+    
+
+}
+
+
+
+
+@media (max-width: 665px) {
+
+    .price-box{
+        display: flex;
+        column-gap: 29px;
+        margin-bottom: 128px;
+        
+    }
+
+
+    .price-subhead__inner{
+        display: none;
+    }
+
+    .price-subhead__inner_next{
+        display: block;
+        width: 200px;
+        text-align: center;
+        padding-top: 27px;
+    }
+
+    .price-subhead {
+        margin-top: 120px;
+        margin-bottom: 123px;
+    }
+    
+
+}
+
+
+
+@media (max-width: 500px) {
+
+    .price-wrapp__subtitle{
+        display: block;
+        text-align: center;
+        width: 200px;
+        height: 92px;
+        margin-left: 0;
+        margin: 63px auto 72px; 
+    }
+
+    .price-box{
+        display: flex;
+        justify-content: center;
+        column-gap: 5px;
+        
+    }
+
+    .price__images{
+        width: 100%;
+    }
+
+    .price__images img {
+        width: 100%;
+    }
+
+    .price-subhead__inner_next{
+        width: 167px;
+    }
+
+    .price-subhead__inner_next p{
+        font-size: 22px;
+        line-height: 25px;
+    
+    }
+
+}
+
+
+@media (max-width: 350px) {
+
+    .price-subhead__inner_next{
+        width: 137px;
+    }
+
+
+    .price-subhead__inner_next p{
+        font-size: 19px;
+        line-height: 21px;
+    
+    }
+}

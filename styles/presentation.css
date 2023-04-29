@@ -1,0 +1,162 @@
+.presentation-fone{
+    width: 100%;
+    height: 100%;
+    background-image: url('../resources/presentation-fone.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.presentation-container{
+    padding-top: 98px;
+}
+
+.presentation-subtitle{
+    display: block;
+    text-align: center;
+    margin-bottom: 138px;
+    color: #FFFFFF;
+}
+
+.presentation__blocks{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 226px;
+}
+
+
+
+.presentation__block{
+    position: relative;
+    width: 350px;
+    height: 510px;
+    text-align: center;
+    background: #FFFFFF;
+}
+
+.presentation__block_first::before {
+    content: "RECOMMENDED";
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 124px;
+    height: 29px;
+    padding-top: 7px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+    background: #D67E34;
+}
+
+.presentation-inner__img{
+    position: relative;
+    width: 225px;
+    height: 225px;
+    margin: 80px auto 20px;
+}
+
+.presentation-inner__img::after{
+    content: "420";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 66px;
+    font-family: 'Cookie';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 33px;
+    padding-top: 34px;
+    color: #FFFFFF;
+    background-image: url('../resources/presentation-pic.png');
+}
+
+
+
+.presentation__subhead{
+    margin-bottom: 17px;
+}
+
+.presentation__txt{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 12px;
+    color: #000000;
+}
+
+.presentation__btn{
+    font-family: 'Open Sans';
+    width: 220px;
+    height: 50px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF; 
+    border: none;  
+    background: #D67E34;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.presentation__btn:hover {
+    color: #FFFFFF; 
+    background: #D67E34;
+    opacity: 70%;
+}
+
+
+
+
+
+@media (max-width: 1199px) {
+
+    .presentation__blocks{
+        justify-content: center;
+        column-gap: 30px;
+    }
+
+
+    .presentation__block_third {
+        display: none;
+    }
+
+}
+
+
+
+@media (max-width: 767px) {
+
+    .presentation-container{
+        padding-top: 60px;
+    }
+
+    .presentation-subtitle{
+        margin-bottom: 98px;
+    }
+
+    .presentation__blocks{
+        padding-bottom: 106px;
+    }
+
+    .presentation__block_second {
+        display: none;
+    }
+
+}
+
+
+
+
+
+

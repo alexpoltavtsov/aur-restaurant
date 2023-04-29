@@ -1,0 +1,445 @@
+.header-container{
+    padding-top: 50px;
+
+}
+
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../resources/header-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.header__inner{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 68px;
+    margin-bottom: 204px;
+}
+
+.header__box{
+    display: flex;
+    align-items: center;
+}
+
+.header-menu__list{
+    position: relative;
+    display: flex;
+    height: 51px;
+    align-items: center;
+    column-gap: 25px;
+    padding-right: 70px;
+    border-right: 1px solid #FFFFFF;
+}
+
+.header-menu__list::after{
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 21px;
+    width: 13px;
+    height: 13px;
+    background-image: url('../resources/logo-cart.png');
+}
+
+.menu__list-item{
+    font-family: 'Open Sans';
+    height: 19px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.header-menu__list-item:hover{
+    color: #FF7400;
+}
+
+.header__contacts{
+    position: relative;
+    width: 160px;
+    margin: 0 45px 0 34px;
+}
+
+.header__contacts::before{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -3px;
+    width: 23px;
+    height: 23px;
+    background-image: url('../resources/logo-phone.png');
+}
+
+.contacts-tel{
+    display: flex;
+    justify-content: end;
+    height: 27px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.header__contacts-tel:hover{
+    color: #FF7400;
+}
+
+.header__contacts-text{
+    height: 31px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.burger{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    visibility: hidden;
+    display: flex;
+    justify-content: end;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.burger-btn {
+    display: none;
+    z-index: 200;
+}
+
+.burger_open{
+    visibility: visible;
+}
+
+.burger__content{
+    width: 75%;
+    height: 100%;
+    padding: 20px;
+    padding-top: 100px;
+    transition: transform 0.3s linear;
+    transform: translateX(100%);
+    background-color: #fff;
+}
+
+.burger_open .burger__content{
+    transform: translateX(0);
+}
+
+.burger__logo{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.burger__box{
+    text-align: center;
+}
+
+.burger-menu__list-item{
+    display: block;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #D67E35;
+}
+
+.burger-menu__list li:last-child{
+    margin-bottom: 50px;
+}
+
+.burger__contacts-tel{
+    justify-content: center;
+    font-size: 37px;
+    margin-bottom: 20px;
+    color: #2C2C2C;
+}
+
+.burger__contacts-text{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+
+
+.header-wrap__title {
+    width: 485px;
+    padding-bottom: 231px;
+}
+
+.header-wrap__title_next {
+    display: none;
+    width: 485px;
+    padding-bottom: 231px;
+}
+
+.header__title-welcome {
+    font-family: 'Tinos';
+    width: 430px;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 57px;
+    margin: 0 auto;
+    color: #D67E35;
+}
+
+.header__title {
+    font-family: 'Tinos';
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 92px;
+    margin-bottom: 6px;
+    color: #D67E35;
+}
+
+.header__title-definition {
+    position: relative;
+    font-family: 'Open Sans';
+    width: 169px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0 auto 21px;
+    color: #FFFFFF;
+}
+
+.header__title-definition::before{
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: -70px;
+    width: 61px;
+    height: 2px;
+    background: #C4C4C4;
+}
+
+.header__title-definition::after{
+    content: "";
+    position: absolute;
+    top: 11px;
+    right: -70px;
+    width: 61px;
+    height: 2px;
+    background: #C4C4C4;
+}
+
+.header__title-btn {
+    display: block;
+    width: 137px;
+    margin: 0 auto;
+}
+
+
+
+@media (max-width: 900px) {
+
+    .header__box{
+        display: none;
+    }
+
+    .burger-btn {
+        position: relative;
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin: auto 0;
+        border-top: 3.25px solid #FF7400;
+        border-bottom: 3.25px solid #FF7400;
+        background: none;
+        cursor: pointer;
+    }
+
+    .burger-btn::after{
+        position: absolute;
+        content: "";
+        top: 21px;
+        right: 0;
+        width: 50px;
+        height: 3.25px;
+        background: #FF7400;
+    }
+
+    .burger-btn_open::after {
+        display: none;
+    }
+
+    .burger-btn_open{
+        position: absolute;
+        top: 50px;
+        right: 15px;
+        width: 70px;
+        height: 70px;
+        background: url('../resources/cross-tablet.png');
+        background-repeat: no-repeat;
+        border: none;
+    }
+
+}
+
+
+
+@media (max-width: 767px) {
+
+    .header-wrap__title {
+        display: none;
+    }
+
+    .header-wrap__title_next {
+        display: block;
+        width: 276px;
+        margin: 0 auto;
+        padding-bottom: 304px;
+    }
+
+    .header__title-welcome {
+        width: 236px;
+        font-size: 30px;
+        line-height: 34.5px;    
+    }
+
+    .header__title {
+        font-size: 40px;
+        line-height: 46px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .header__title-definition {
+        width: 141px;
+        font-size: 15px;
+        line-height: 20px;
+        margin: 0 auto 45px;
+        
+    }
+    
+    .header__title-definition::before{
+        position: static;
+    }
+    
+    .header__title-definition::after{
+        position: static;
+    }
+    
+
+}
+
+@media (max-width: 505px){
+
+    .header__logo{
+        display: none;
+    }
+
+    .header__inner{
+        position: relative;
+        justify-content: end;
+        height: 31px;
+    }
+
+    .header__inner::before{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 31px;
+        height: 31px;
+        background-image: url('../resources/header-logo-m1.png');
+    }
+
+    .header__inner::after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 14px;
+        width: 31px;
+        height: 31px;
+        background-image: url('../resources/header-logo-m2.png');
+    }
+
+    .burger-btn {
+        width: 31px;
+        height: 18px; 
+    }
+
+    .burger-btn::after{
+        top: 5px;
+        width: 31px;
+    }
+
+    .burger-btn_open{
+        top: 0;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        background: url('../resources/cross-mobile.png');
+    }
+
+    .header-wrap__title_next {
+        display: block;
+        width: 100%;
+    }
+
+
+
+    .burger__logo-img{
+        display: none;
+    }
+
+    .burger__logo{
+        position: relative;
+        width: 45px;
+        height: 31px;
+        margin: 0 auto 40px;
+    }
+
+    
+
+    .burger__logo::before{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 31px;
+        height: 31px;
+        background-image: url('../resources/header-logo-m1.png');
+    }
+
+    .burger__logo::after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 14px;
+        width: 31px;
+        height: 31px;
+        background-image: url('../resources/header-logo-m2.png');
+    }
+
+
+
+
+    .burger-menu__list-item{
+        font-size: 23px;
+        margin-bottom: 25px;
+        
+    }
+    
+    .burger-menu__list li:last-child{
+        margin-bottom: 40px;
+    }
+    
+    .burger__contacts-tel{
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    
+    .burger__contacts-text{
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+}
